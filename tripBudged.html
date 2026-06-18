@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TravelNest | Budget Planner</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body id="budget">
+    <header class="site-header">
+        <a class="logo" href="home.html">TravelNest</a>
+        <button class="menu-button" aria-label="Toggle navigation">☰</button>
+        <nav class="site-nav">
+            <a href="home.html">Home</a>
+            <a href="destination.html">Destinations</a>
+            <a href="tripBudged.html">Budget Planner</a>
+            <a href="tripGenerator.html">Trip Generator</a>
+            <a href="travelMood.html">Travel Mood</a>
+            <a href="feedback.html">Feedback</a>
+        </nav>
+    </header>
+
+    <main class="page-content">
+        <section class="page-header">
+            <h1>Trip Budget Planner</h1>
+            <p>Enter your trip details and calculate your total expenses with clear budget status.</p>
+        </section>
+
+        <section class="planner-grid">
+            <form class="planner-form" id="budgetForm">
+                <label>Trip name<input type="text" id="tripName" placeholder="Weekend escape" required></label>
+                <label>Number of nights<input type="number" id="tripNights" min="1" value="3" required></label>
+                <label>Travelers<input type="number" id="tripTravelers" min="1" value="2" required></label>
+                <label>Cost per person<input type="number" id="costPerPerson" min="0" value="250" required></label>
+                <label>Budget limit<input type="number" id="budgetLimit" min="0" value="1500" required></label>
+                <button type="submit">Calculate budget</button>
+                <p class="notice" id="budgetNotice"></p>
+            </form>
+
+            <div class="budget-results">
+                <div class="summary-card" id="budgetResult">
+                    <h2>Budget summary</h2>
+                    <p id="budgetSummary">Fill in the planner to get started.</p>
+                </div>
+                <div class="progress-card">
+                    <span>Budget progress</span>
+                    <div class="progress-wrap">
+                        <div class="progress-bar" id="budgetProgress"></div>
+                    </div>
+                    <p id="budgetStatus"></p>
+                </div>
+            </div>
+        </section>
+
+        <section class="saved-data" id="savedBudgetSection"></section>
+    </main>
+
+    <footer class="site-footer compact-footer">
+        <p>Budget planner saved in your browser for quick trip review.</p>
+    </footer>
+    <script src="script.js" defer></script>
+</body>
+</html>

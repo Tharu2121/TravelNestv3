@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="english">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TravelNest | Home</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body id="home">
+    <header class="site-header">
+        <a class="logo" href="home.html">TravelNest</a>
+        <button class="menu-button" aria-label="Toggle navigation">☰</button>
+        <nav class="site-nav">
+            <a href="home.html">Home</a>
+            <a href="destination.html">Destinations</a>
+            <a href="tripBudged.html">Budget Planner</a>
+            <a href="tripGenerator.html">Trip Generator</a>
+            <a href="travelMood.html">Travel Mood</a>
+            <a href="feedback.html">Feedback</a>
+        </nav>
+    </header>
+
+    <main class="page-content">
+        <section class="hero">
+            <div class="hero-copy">
+                <span class="eyebrow">Your next adventure awaits</span>
+                <h1>Explore smarter with TravelNest</h1>
+                <p>Use responsive trip planning tools, destination discovery, and local storage saving for all your travel ideas.</p>
+            </div>
+            <div class="hero-panel">
+                <h2>Travel Quote</h2>
+                <div class="quote-box">
+                    <blockquote id="quoteText">Loading inspiration...</blockquote>
+                    <p id="quoteAuthor"></p>
+                </div>
+            </div>
+        </section>
+
+        <section class="destination-day">
+            <article class="card">
+                <header>
+                    <h2>Destination of the Day</h2>
+                    <p id="destinationDate"></p>
+                </header>
+                <div class="destination-card">
+                    <h3 id="destinationName">Loading...</h3>
+                    <p id="destinationDescription"></p>
+                    <ul class="details-list">
+                        <li><strong>Continent:</strong> <span id="destinationContinent"></span></li>
+                        <li><strong>Best season:</strong> <span id="destinationSeason"></span></li>
+                        <li><strong>Why go?</strong> <span id="destinationWhy"></span></li>
+                    </ul>
+                </div>
+            </article>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="footer-section newsletter">
+            <h3>Newsletter</h3>
+            <p>Save your email and get weekly travel inspiration right from this page.</p>
+            <form id="newsletterForm">
+                <input type="email" id="newsletterEmail" placeholder="Your email address" required>
+                <button type="submit">Subscribe</button>
+            </form>
+            <p class="notice" id="newsletterMessage"></p>
+        </div>
+        <div class="footer-section footer-links">
+            <h3>Quick links</h3>
+            <nav>
+                <a href="destination.html">Destination Explorer</a>
+                <a href="tripBudged.html">Budget Planner</a>
+                <a href="tripGenerator.html">Trip Generator</a>
+                <a href="travelMood.html">Travel Mood</a>
+            </nav>
+        </div>
+        <p class="copyright">© 2026 TravelWise</p>
+    </footer>
+
+    <script src="script.js" defer></script>
+</body>
+</html>

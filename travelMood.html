@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TravelNest | Travel Mood</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body id="mood">
+    <header class="site-header">
+        <a class="logo" href="home.html">TravelNest</a>
+        <button class="menu-button" aria-label="Toggle navigation">☰</button>
+        <nav class="site-nav">
+            <a href="home.html">Home</a>
+            <a href="destination.html">Destinations</a>
+            <a href="tripBudged.html">Budget Planner</a>
+            <a href="tripGenerator.html">Trip Generator</a>
+            <a href="travelMood.html">Travel Mood</a>
+            <a href="feedback.html">Feedback</a>
+        </nav>
+    </header>
+
+    <main class="page-content">
+        <section class="page-header">
+            <h1>Travel Mood</h1>
+            <p>Choose your mood to set the atmosphere for your travel experience.</p>
+        </section>
+
+        <section class="sound-panel">
+            <h2>Select your mood</h2>
+            <div class="sound-buttons">
+                <button class="sound-button" data-sound="beach">Beach</button>
+                <button class="sound-button" data-sound="forest">Forest</button>
+                <button class="sound-button" data-sound="city">City</button>
+            </div>
+            <p class="notice" id="soundStatus">No sound playing</p>
+        </section>
+
+        <section class="mood-list">
+            <h2>Destination tracker</h2>
+            <div id="moodDestinations"></div>
+            <p class="mood-summary">Visited: <span id="visitedCount">0</span> · Planned: <span id="plannedCount">0</span></p>
+        </section>
+    </main>
+
+    <footer class="site-footer compact-footer">
+        <p>Your mood choices and destination planning are stored locally.</p>
+    </footer>
+    <script src="script.js" defer></script>
+</body>
+</html>

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TravelNest | Feedback</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body id="feedback">
+    <header class="site-header">
+        <a class="logo" href="home.html">TravelNest</a>
+        <button class="menu-button" aria-label="Toggle navigation">☰</button>
+        <nav class="site-nav">
+            <a href="home.html">Home</a>
+            <a href="destination.html">Destinations</a>
+            <a href="tripBudged.html">Budget Planner</a>
+            <a href="tripGenerator.html">Trip Generator</a>
+            <a href="travelMood.html">Travel Mood</a>
+            <a href="feedback.html">Feedback</a>
+        </nav>
+    </header>
+
+    <main class="page-content">
+        <section class="page-header">
+            <h1>Feedback & Support</h1>
+            <p>Send feedback or ask for help. Your message is saved locally for review.</p>
+        </section>
+
+        <section class="feedback-panel">
+            <form id="feedbackForm">
+                <label>Name<input type="text" id="feedbackName" placeholder="Your name" required></label>
+                <label>Email<input type="email" id="feedbackEmail" placeholder="Your email" required></label>
+                <label>Subject<input type="text" id="feedbackSubject" placeholder="Subject" required></label>
+                <label>Message<textarea id="feedbackMessage" placeholder="Tell us what you need" rows="5" required></textarea></label>
+                <button type="submit">Send Message</button>
+                <p class="notice" id="feedbackStatus"></p>
+            </form>
+            <div class="saved-feedback" id="savedFeedback"></div>
+        </section>
+
+        <section class="faq">
+            <h2>FAQ</h2>
+            <div class="accordion-item">
+                <button class="accordion-button">How is my information stored?</button>
+                <div class="accordion-panel"><p>All form entries are stored in your browser using localStorage and never shared externally.</p></div>
+            </div>
+            <div class="accordion-item">
+                <button class="accordion-button">Can I change my newsletter email later?</button>
+                <div class="accordion-panel"><p>Yes. Subscribe again on the home page and the latest email will replace the previous value.</p></div>
+            </div>
+            <div class="accordion-item">
+                <button class="accordion-button">What if I want a new trip idea?</button>
+                <div class="accordion-panel"><p>Use the Trip Generator page and click Surprise Me for a random destination suggestion.</p></div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer compact-footer">
+        <p>Feedback saved for later review and repeated visits.</p>
+    </footer>
+    <script src="script.js" defer></script>
+</body>
+</html>
